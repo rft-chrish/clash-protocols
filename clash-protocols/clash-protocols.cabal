@@ -68,6 +68,9 @@ common common-options
     -- blackboxes attached for them. You can disable this, but be sure to add
     -- a no-specialize pragma to every function with a blackbox.
     -fno-worker-wrapper
+    -optP-DMAX_TUPLE_SIZE=25
+    -fconstraint-solver-iterations=50
+
 
   default-language: GHC2021
   build-depends:
